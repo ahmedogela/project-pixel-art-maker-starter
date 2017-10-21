@@ -1,10 +1,5 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
-
-function makeGrid() {
-
-// Your code goes here!
-
-}
+// Select inputs and variable declaration
+let colorInput = $('#colorPicker');
+let heightInput = $('#input_height');
+let widthInput = $('#input_width');
+let table = $('#pixel_canvas');
