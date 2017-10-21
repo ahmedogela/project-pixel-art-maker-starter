@@ -4,6 +4,12 @@ let heightInput = $('#input_height');
 let widthInput = $('#input_width');
 let table = $('#pixel_canvas');
 
+// When size is submitted by the user, call makeGrid()
+$('form#sizePicker').submit(function(event) {
+    event.preventDefault();
+    makeGrid();
+});
+
 // Grid Creation
 function makeGrid() {
     for(let i = 0; i < heightInput.val(); i++) {
