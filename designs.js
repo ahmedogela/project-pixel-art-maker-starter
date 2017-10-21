@@ -25,3 +25,8 @@ function makeGrid() {
 function resetGrid() {
     table.html('');
 }
+
+// listen for pixel clicks and change its color
+table.on('click', 'td', function(event) {
+    $(this).css('background-color', colorInput.val());
+});
